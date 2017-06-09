@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_principal"
+        android:title="Informações do usuário"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/sobre_app"
+        android:title="Sobre o App"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource"/>
+
+    <item
+        android:id="@+id/sair"
+        android:title="Sair"
+        app:showAsAction="never"
+        tools:ignore="AppCompatResource"/>
+
+</menu>

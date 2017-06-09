@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Boa Viagem Final</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha (opcional)</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_register">Cadastro</string>
+    <string name="textview">Seja bem vindo</string>
+    <string name="make_login">Fazendo Login…</string>
+    <string name="enter_your_email">Informe seu email</string>
+    <string name="enter_your_password">Informe sua senha</string>
+    <string name="registering_user">Cadastrando usuário…</string>
+    <string name="successfully_registred">Usuario cadastrado com sucesso</string>
+    <string name="regristration_error">Erro no registro</string>
+    <string name="Invalid_user">Verifique se está correto o email de login ou a senha</string>
+    <string name="login_error">nao login</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="me_diga_seu_nome">Me diga seu nome</string>
+    <string name="seu_nome">seu nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="modelo_telefone">31 9 8765 7423</string>
+    <string name="voc_quer_tirar_uma_foto">Você quer tirar uma foto?</string>
+    <string name="acione_a_c_mera_para_tirar_uma_foto">Acione a câmera para tirar uma foto</string>
+</resources>

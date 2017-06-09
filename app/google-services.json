@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "234603933345",
+    "firebase_url": "https://boaviagemfinal.firebaseio.com",
+    "project_id": "boaviagemfinal",
+    "storage_bucket": "boaviagemfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234603933345:android:8ef58f66bd6a9609",
+        "android_client_info": {
+          "package_name": "com.manu.projeto.boaviagemfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234603933345-lu4ur72h8nn02nve5bknr2j8tlkdulr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manu.projeto.boaviagemfinal",
+            "certificate_hash": "b1d4185e54caf16e9a75e1d11cec888cfc3bd112"
+          }
+        },
+        {
+          "client_id": "234603933345-tmup1oc3tkqfdbommt6qrmq6pktfmc3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANwIed5v5y9Itu7K03OGFO-3MO8sW2e6A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234603933345-tmup1oc3tkqfdbommt6qrmq6pktfmc3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

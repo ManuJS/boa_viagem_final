@@ -3,19 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_principal"
-        android:title="Informações do usuário"
+        android:id="@+id/info_usuario"
+        android:title="@string/informa_es_do_usu_rio"
         app:showAsAction="never"
         tools:ignore="AppCompatResource" />
     <item
         android:id="@+id/sobre_app"
-        android:title="Sobre o App"
+        android:title="@string/sobre_o_app"
         app:showAsAction="never"
         tools:ignore="AppCompatResource"/>
 
     <item
         android:id="@+id/sair"
-        android:title="Sair"
+        android:title="@string/sair"
         app:showAsAction="never"
         tools:ignore="AppCompatResource"/>
 

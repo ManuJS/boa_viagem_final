@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,10 +23,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".dashboard.MainDashBoard"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".registro.CadastroUsuario"
+            android:label="@string/informa_es_do_usu_rio"
+            android:parentActivityName=".dashboard.MainDashBoard"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dashboard.MainDashBoard" />
+        </activity>
+
+        <activity android:name=".Sobre"
+            android:label="@string/sobre_o_app"
+            android:parentActivityName=".dashboard.MainDashBoard"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dashboard.MainDashBoard" />
+        </activity>
+
+
         <activity android:name=".login.PrimeiraActivity" />
-        <activity android:name=".registro.RegistrationActivity" />
-        <activity android:name=".dashboard.MainDashBoard" />
-        <activity android:name=".Sobre"/>
+        <activity android:name=".registro.RegistrationActivity"/>
+
+
+
+
 
 
     </application>

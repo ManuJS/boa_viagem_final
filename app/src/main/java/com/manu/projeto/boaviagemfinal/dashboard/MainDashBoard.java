@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.manu.projeto.boaviagemfinal.R;
 import com.manu.projeto.boaviagemfinal.Sobre;
 import com.manu.projeto.boaviagemfinal.login.LoginActivity;
+import com.manu.projeto.boaviagemfinal.registro.CadastroUsuario;
 
 
 /**
@@ -28,6 +29,7 @@ public class MainDashBoard extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     TextView txtSejaBemVindo;
     String nome;
+    String currentUser;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +39,7 @@ public class MainDashBoard extends AppCompatActivity {
         if (user != null) {
             // Name, email address, and profile photo Url
             nome = user.getEmail();
+            currentUser = String.valueOf(FirebaseAuth.getInstance().getCurrentUser());
             // Check if user's email is verified
             boolean emailVerified = user.isEmailVerified();
 
@@ -49,17 +52,22 @@ public class MainDashBoard extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
 //        final String nomePessoa = (String) bundle.get("nome");
-        txtSejaBemVindo.setText("Seja bem vind@  " + nome);
+        txtSejaBemVindo.setText("Seja bem vind@  " + currentUser);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                
+                adicionarViagem();
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
 
+    }
+
+    private void adicionarViagem() {
     }
 
     @Override
@@ -74,25 +82,32 @@ public class MainDashBoard extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
+            case R.id.info_usuario:
+                cadastroUsuario();
+                return true;
             case R.id.sobre_app:
-                abreActivity();
+                sobreActivity();
                 return true;
             case R.id.sair:
-                trocaActivity();
+                sairActivity();
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
-    public void abreActivity() {
+    public void cadastroUsuario(){
+        Intent intent = new Intent(this, CadastroUsuario.class);
+        startActivity(intent);
+    }
+    public void sobreActivity() {
         Intent intent = new Intent(this, Sobre.class);
         startActivity(intent);
     }
 
-    public void trocaActivity() {
+    public void sairActivity() {
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(this, LoginActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 

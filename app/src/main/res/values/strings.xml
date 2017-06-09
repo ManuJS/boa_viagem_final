@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Boa Viagem Final</string>
+    <string name="app_name">Boa Viagem</string>
     <string name="title_activity_login">Login</string>
 
     <!-- Strings related to login -->
@@ -24,4 +24,8 @@
     <string name="modelo_telefone">31 9 8765 7423</string>
     <string name="voc_quer_tirar_uma_foto">Você quer tirar uma foto?</string>
     <string name="acione_a_c_mera_para_tirar_uma_foto">Acione a câmera para tirar uma foto</string>
+    <string name="informa_es_do_usu_rio">Informações do usuário</string>
+    <string name="sobre_o_app">Sobre o App</string>
+    <string name="sair">Sair</string>
+    <string name="salvar">Salvar</string>
 </resources>
